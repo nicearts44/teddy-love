@@ -2988,3 +2988,319 @@ section {
         border: 1px solid #ddd;
     }
 }
+/* ===== CORRECTIONS RESPONSIVE MOBILE ===== */
+/* À AJOUTER À LA FIN DU FICHIER CSS */
+
+@media (max-width: 768px) {
+    /* Correction principale pour empêcher le débordement */
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    /* Correction des containers */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+    }
+    
+    /* Correction du hero */
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    
+    /* Correction des titres */
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        padding: 0 10px;
+    }
+    
+    /* Correction des grilles */
+    .stats-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .testimonials-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .reassurance-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Correction des cartes */
+    .stat-card,
+    .testimonial-card,
+    .reassurance-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Correction de l'offre */
+    .offer-card {
+        margin: 0 10px;
+    }
+    
+    .current-price {
+        font-size: 2.8rem;
+    }
+    
+    /* Correction des boutons */
+    .btn {
+        width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        padding: 15px;
+    }
+    
+    /* Correction du modal */
+    .modal-container {
+        width: 95%;
+        margin: 10px;
+    }
+    
+    .modal-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Correction pour très petits écrans */
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .current-price {
+        font-size: 2.2rem;
+    }
+    
+    .offer-content {
+        padding: 20px;
+    }
+    
+    /* Correction des images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .peluche-img {
+        max-width: 100%;
+    }
+    
+    /* Correction du footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Correction du sticky CTA */
+    .sticky-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .sticky-info {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Correction pour empêcher le zoom sur iOS */
+@media (max-width: 480px) {
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+}
+
+/* Forcer les images à rester dans leur conteneur */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* S'assurer que tout le contenu reste dans la largeur de l'écran */
+* {
+    box-sizing: border-box;
+}
+
+/* Désactiver le scroll horizontal */
+body {
+    overflow-x: hidden;
+}
+
+/* ===== CORRECTIONS SPÉCIFIQUES POUR LA SECTION PRÉSENTATION ===== */
+
+@media (max-width: 768px) {
+    /* Correction spécifique pour la grille produit */
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    /* Correction de l'image principale */
+    .main-image {
+        width: 100%;
+        min-height: 250px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 0 auto 20px;
+    }
+    
+    .product-main-img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        object-fit: contain;
+    }
+    
+    /* Correction des miniatures */
+    .thumbnails {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px 5px;
+        margin: 0 -5px;
+    }
+    
+    .thumbnail {
+        flex: 0 0 auto;
+        min-width: 80px;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    /* Correction de la liste des caractéristiques */
+    .features-list {
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 0;
+    }
+    
+    .feature-item {
+        padding: 15px;
+        margin: 0 -5px;
+    }
+    
+    /* Correction des icônes */
+    .feature-icon {
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Ajustement du texte */
+    .feature-content h4 {
+        font-size: 0.9rem;
+    }
+    
+    .feature-content p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Corrections supplémentaires pour petits écrans */
+    .product-grid {
+        gap: 20px;
+    }
+    
+    .main-image {
+        min-height: 200px;
+        border-radius: 12px;
+    }
+    
+    .thumbnail {
+        min-width: 70px;
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+    
+    .feature-item {
+        padding: 12px;
+        margin: 0;
+    }
+    
+    /* S'assurer qu'aucun élément ne dépasse */
+    .product-gallery,
+    .product-details {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+
+/* Correction pour les éléments spécifiques qui dépassent */
+#presentation .container {
+    overflow: hidden;
+}
+
+#presentation .section-header {
+    padding: 0 10px;
+}
+
+/* Empêcher le débordement du texte */
+.feature-content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Forcer les images à rester dans leur conteneur */
+.product-main-img,
+.thumbnail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Correction pour les barres de défilement */
+.thumbnails::-webkit-scrollbar {
+    height: 4px;
+}
+
+.thumbnails::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.thumbnails::-webkit-scrollbar-thumb {
+    background: var(--rose-romantique);
+    border-radius: 2px;
+}
+
+/* S'assurer que toute la section est visible */
+#presentation {
+    overflow: hidden;
+    width: 100%;
+}
