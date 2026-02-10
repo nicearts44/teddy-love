@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teddy Love - Peluche Saint-Valentin | Offrez un Amour Éternel</title>
+    <meta
+      name="description"
+      content="Offrez Teddy Love à votre partenaire pour matérialiser votre amour. Peluche premium édition limitée Saint-Valentin avec message personnalisé."
+    />
+    <meta name="keywords" content="peluche Saint-Valentin, cadeau amour, Teddy Love, peluche premium, cadeau romantique">
+    <meta name="author" content="Teddy Love">
+
+    <!-- Préload des polices critiques -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,900&family=Playfair+Display:wght@700&family=Inter:wght@400;500&family=Dancing+Script:wght@600&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,900&family=Playfair+Display:wght@700&family=Inter:wght@400;500&family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Préload des images critiques -->
+    <link rel="preload" as="image" href="assets/images/peluche-hero.png">
+    <link rel="preload" as="image" href="assets/images/peluche-principal.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23DC143C' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome pour icônes (chargement asynchrone) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </noscript>
+
+    <!-- Schema.org pour SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Teddy Love - Peluche Saint-Valentin",
+      "description": "Peluche premium d'amour, édition limitée Saint-Valentin",
+      "image": "assets/images/peluche-hero.png",
+      "brand": {
+        "@type": "Brand",
+        "name": "Teddy Love"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "25000",
+        "priceCurrency": "XOF",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2026-02-14"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "247"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Loader d'entrée -->
+    <div class="loader" id="loader">
+      <div class="heart-pulse">
+        <i class="fas fa-heart" aria-hidden="true"></i>
+      </div>
+      <p class="loading-text">Préparation d'un moment magique...</p>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo" aria-label="Teddy Love - Retour à l'accueil">
+          <span class="heart-icon">♥</span>
+          <span>Teddy Love</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#pourquoi" class="nav-link">Pourquoi</a>
+          <a href="#presentation" class="nav-link">Teddy Love</a>
+          <a href="#offre" class="nav-link">Prix</a>
+          <a href="#avis" class="nav-link">Avis</a>
+          <a href="#cta" class="nav-link cta-nav">
+            Offrir maintenant<span class="heart-beat">♥</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+      <div class="hero-background">
+        <div class="particles" id="particles" aria-hidden="true"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title typewriter">
+              <span class="line">Certains cadeaux se démodent.</span>
+              <span class="line">D'autres deviennent des reliques du cœur.</span>
+            </h1>
+
+            <div class="hero-quote">
+              <p>
+                Les fleurs se fanent, les chocolats se mangent.<br />
+                <span class="eternal-highlight">Teddy Love, elle, deviens une légende.</span>
+              </p>
+            </div>
+
+            <div class="hero-cta">
+              <a href="#offre" class="btn btn-hero">
+                <i class="fas fa-user-check" aria-hidden="true"></i>
+                Oui, je choisis l'inoubliable
+                <i class="fas fa-arrow-right arrow-bounce" aria-hidden="true"></i>
+              </a>
+              <p class="delivery-note">
+                <i class="fas fa-lock-heart" aria-hidden="true"></i>
+                Carte personnalisée incluse • Satisfait ou remboursé 30 jours
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="image-container">
+              <img
+                src="assets/images/peluche-hero.png"
+                alt="Teddy Love - Peluche d'amour premium Saint-Valentin, douce et accueillante"
+                class="peluche-img floating"
+                width="500"
+                height="500"
+                loading="eager"
+              />
+              <div class="image-glow" aria-hidden="true"></div>
+              <div class="heart-overlay" aria-hidden="true">
+                <div class="heart-pulse-small"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pourquoi Section -->
+    <section class="section pourquoi" id="pourquoi">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Pourquoi
+            <span class="highlight"> Teddy marquera son cœur</span>
+          </h2>
+          <p class="section-subtitle">
+            Elle ne remplace pas votre présence, elle la prolonge dans le temps.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+            </div>
+            <div class="stat-content">
+              <h3>Présence quotidienne</h3>
+              <p>
+                94% des personnes gardent leur peluche sentimentale à portée de
+                main tous les jours.
+              </p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-brain" aria-hidden="true"></i>
+            </div>
+            <div class="stat-content">
+              <h3>Mémoire sensorielle</h3>
+              <p>
+                Le toucher crée des souvenirs durables, ancrés dans la mémoire
+                émotionnelle de votre partenaire.
+              </p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-infinity" aria-hidden="true"></i>
+            </div>
+            <div class="stat-content">
+              <h3>Amour durable</h3>
+              <p>
+                Conçue pour durer des années, bien au-delà de la Saint-Valentin.
+                Un témoignage éternel de votre amour.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phrase de transition punchy -->
+      <div class="transition-phrase">
+        <div class="container">
+          <p class="transition-text">
+            <i class="fas fa-quote-left" aria-hidden="true"></i>
+            Offrir Teddy Love, c'est choisir d'être présent<br />
+            dans ses bras même quand vous êtes absent.
+            <i class="fas fa-quote-right" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Présentation Produit -->
+    <section class="section presentation" id="presentation">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            La perfection <span class="highlight">entre vos mains</span>
+          </h2>
+          <p class="section-subtitle">
+            Découvrez chaque détail qui fait de
+            <span class="highlight">Teddy Love</span> un compagnon unique.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-gallery">
+            <div class="main-image">
+              <img
+                src="assets/images/peluche-principal.jpeg"
+                alt="Teddy Love - Détail de la fourrure premium ultra-douce"
+                class="product-main-img"
+                id="productMainImage"
+                width="700"
+                height="400"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="thumbnails">
+              <button class="thumbnail active" data-image="texture" aria-label="Voir la texture de la fourrure">
+                <span>Fourrure</span>
+              </button>
+              <button class="thumbnail" data-image="broderie" aria-label="Voir la qualité de la broderie">
+                <span>Broderie</span>
+              </button>
+              <button class="thumbnail" data-image="visage" aria-label="Voir le visage sympathique">
+                <span>Visage</span>
+              </button>
+              <button class="thumbnail" data-image="message" aria-label="Voir le message personnalisable">
+                <span>Message</span>
+              </button>
+              <button class="thumbnail" data-image="parfum" aria-label="parfum personnalisable">
+                <span>Parfum</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <div class="features-list">
+              <div class="feature-item active" data-target="texture">
+                <div class="feature-icon">
+                  <i class="fas fa-feather-alt" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Fourrure Premium</h4>
+                  <p>Texture ultra-douce testée 4× plus agréable au toucher que les peluches standards</p>
+                </div>
+              </div>
+
+              <div class="feature-item" data-target="broderie">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Broderie artisanale</h4>
+                  <p>Message brodé avec un fil de soie blanc haute densité pour une texture en relief de qualité</p>
+                </div>
+              </div>
+
+              <div class="feature-item" data-target="visage">
+                <div class="feature-icon">
+                  <i class="fas fa-face-smile-beam" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Visage sympathique</h4>
+                  <p>Conçu pour inspirer détente et relaxation. Son sourire brodé crée un lien émotionnel immédiat.</p>
+                </div>
+              </div>
+
+              <div class="feature-item" data-target="message">
+                <div class="feature-icon">
+                  <i class="fas fa-pen-to-square" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Message personnalisable</h4>
+                  <p>Messager de vos notes personnalisées pour une authenticité unique à votre relation.</p>
+                </div>
+              </div>
+
+              <div class="feature-item" data-target="parfum">
+                <div class="feature-icon">
+                  <i class="fas fa-spa" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Parfum personnalisable</h4>
+                  <p>
+                    Choix parmi 3 parfums naturels pour une expérience multisensorielle mémorable.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item" data-target="taille">
+                <div class="feature-icon">
+                  <i class="fas fa-ruler-combined" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Dimensions parfaites</h4>
+                  <p>35cm de hauteur, taille idéale pour les câlins et facile à transporter partout.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bénéfices Émotionnels -->
+    <section class="section benefices" id="benefices">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Ils ont donné leur cœur, <span class="highlight">Teddy Love l'a gardé</span>
+          </h2>
+          <p class="section-subtitle">Des milliers d'histoires d'amour, un seul héros</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div
+              class="testimonial-image"
+              style="background-image: url('assets/images/couple-1.jpg')"
+              role="img"
+              aria-label="Marc et Jennifer, ensemble depuis 3 ans"
+            >
+              <div class="testimonial-overlay">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "Marc m'a offert Teddy Love pour nos 1 an. Chaque soir, quand je le serre, je sens sa présence. C'est devenu notre rituel du coucher. Sa douceur m'apaise toujours"
+                  </p>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-info">
+              <h4>Marc & Jennifer</h4>
+              <p>Ensemble depuis 3 ans</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div
+              class="testimonial-image"
+              style="background-image: url('assets/images/couple-2.jpg')"
+              role="img"
+              aria-label="Junior et Chancelle, ensemble depuis 5 ans"
+            >
+              <div class="testimonial-overlay">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "Junior m'a offert Teddy Love pour notre première St Valentin. Je me rappelle encore lorsqu'il me le remettait je l'ai serré très fort avec Teddy au milieu de nous.'"
+                  </p>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-info">
+              <h4>Junior & Chancelle</h4>
+              <p>Ensemble depuis 5 ans</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div
+              class="testimonial-image"
+              style="background-image: url('assets/images/couple-3.jpg')"
+              role="img"
+              aria-label="Eunice et François, ensemble depuis 10 ans"
+            >
+              <div class="testimonial-overlay">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "Eunice m'a confié Teddy Love lors de mon premier voyage d'affaires. Teddy est devenu notre lien pour maintenir la présence même à 500km de distance.'"
+                  </p>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-info">
+              <h4>Eunice & François</h4>
+              <p>Ensemble depuis 10 ans</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div
+              class="testimonial-image"
+              style="background-image: url('assets/images/couple-4.jpg')"
+              role="img"
+              aria-label="Alex et Gloria, ensemble depuis 3 ans"
+            >
+              <div class="testimonial-overlay">
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "Alex a personnalisé le parfum de Teddy. Maintenant, quand Teddy est avec moi, je sens sa voix dire 'Je t'aime'. C'est magique. Même ma mère en veut un maintenant !'"
+                  </p>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-info">
+              <h4>Alex & Gloria</h4>
+              <p>Ensemble depuis 3 ans</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offre & Prix -->
+    <section class="section offre" id="offre">
+      <div class="container">
+        <div class="offer-card">
+          <div class="offer-header">
+            <span class="offer-badge">OFFRE EXCLUSIVE SAINT-VALENTIN</span>
+            <h2 class="offer-title">Teddy Love</h2>
+          </div>
+
+          <div class="offer-content">
+            <div class="price-section">
+              <div class="old-price">38 000F</div>
+              <div class="current-price">25 000F</div>
+              <div class="price-save">Économisez 13 000F</div>
+            </div>
+
+            <div class="includes-list">
+              <h3>INCLUS DANS CETTE OFFRE :</h3>
+              <ul>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Teddy Love (35cm)</li>
+                <li>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> Message personnalisé brodé
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> Emballage cadeau premium
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> Parfumage aux huiles essentielles
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> Carte manuscrite personnalisée
+                </li>
+              </ul>
+            </div>
+
+            <div class="delivery-info">
+              <div class="delivery-icon">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+              </div>
+              <div class="delivery-text">
+                <h4>LIVRAISON EXPRESS GRATUITE</h4>
+                <p>Commandez avant le 10/02 pour recevoir avant le 14/02</p>
+              </div>
+            </div>
+            
+            <div class="stock-counter">
+              <div class="counter-header">
+                <h4><i class="fas fa-fire" aria-hidden="true"></i>ÉDITION LIMITÉE:</h4>
+                <span class="counter-numbers" id="dynamicCounter">147/200 disponibles</span>
+              </div>
+              <div class="counter-bar">
+                <div class="counter-fill" id="counterFill"></div>
+              </div>
+              <p class="stock-note">Dernière chance pour cette édition 2026</p>
+            </div>
+
+            <div class="offer-cta">
+              <button class="btn btn-offer" id="offerBtn">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+                Commander maintenant
+                <span class="btn-pulse" aria-hidden="true"></span>
+              </button>
+              <p class="secure-note">
+                <i class="fas fa-lock" aria-hidden="true"></i>
+                Paiement 100% sécurisé • Satisfait ou remboursé 30 jours
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Réassurance -->
+    <section class="section reassurance" id="reassurance">
+      <div class="container">
+        <div class="reassurance-grid">
+          <div class="reassurance-card">
+            <div class="reassurance-icon shipping">
+              <i class="fas fa-shipping-fast" aria-hidden="true"></i>
+            </div>
+            <h3>Livraison 24-48h</h3>
+            <p>Suivi en temps réel • Garantie avant le 14/02</p>
+          </div>
+
+          <div class="reassurance-card">
+            <div class="reassurance-icon gift">
+              <i class="fas fa-gift" aria-hidden="true"></i>
+            </div>
+            <h3>Emballage premium</h3>
+            <p>Prêt à offrir • Carte personnalisée incluse</p>
+          </div>
+
+          <div class="reassurance-card">
+            <div class="reassurance-icon heart">
+              <i class="fas fa-heart" aria-hidden="true"></i>
+            </div>
+            <h3>100% satisfait</h3>
+            <p>Ou remboursé sous 30 jours • Sans questions</p>
+          </div>
+
+          <div class="reassurance-card">
+            <div class="reassurance-icon support">
+              <i class="fas fa-headset" aria-hidden="true"></i>
+            </div>
+            <h3>Support 7j/7</h3>
+            <p>Conseils personnalisés • De 08h à 22h</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Avis -->
+    <section class="section avis" id="avis">
+      <div class="container">
+        <div class="reviews-container">
+          <div class="reviews-stats">
+            <div class="rating-overview">
+              <div class="rating-score">4.9</div>
+              <div class="rating-stars">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+              </div>
+              <p class="rating-count">sur 247 avis</p>
+            </div>
+
+            <div class="rating-chart">
+              <div class="chart-item">
+                <span>Excellents</span>
+                <div class="chart-bar">
+                  <div class="chart-fill" style="width: 94%"></div>
+                </div>
+                <span>94%</span>
+              </div>
+              <div class="chart-item">
+                <span>Très bons</span>
+                <div class="chart-bar">
+                  <div class="chart-fill" style="width: 5%"></div>
+                </div>
+                <span>5%</span>
+              </div>
+              <div class="chart-item">
+                <span>Moyens</span>
+                <div class="chart-bar">
+                  <div class="chart-fill" style="width: 1%"></div>
+                </div>
+                <span>1%</span>
+              </div>
+            </div>
+
+            <div class="recommendation">
+              <div class="recommend-icon">
+                <i class="fas fa-stethoscope" aria-hidden="true"></i>
+              </div>
+              <p>Recommandé par <strong>3 psychologues du couple</strong></p>
+            </div>
+          </div>
+
+          <div class="reviews-carousel">
+            <div class="carousel-container" id="reviewsCarousel">
+              <!-- Les avis seront injectés par JS -->
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn prev" id="prevReview" aria-label="Avis précédent">
+                <i class="fas fa-chevron-up" aria-hidden="true"></i>
+              </button>
+              <button class="carousel-btn next" id="nextReview" aria-label="Avis suivant">
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section cta-final" id="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">
+            Ne laissez pas cette Saint-Valentin<br>
+            être juste une autre date.
+          </h2>
+          
+          <p class="cta-text">
+            Offrez un souvenir qui se touche, qui se serre,<br>
+            qui vit dans l'espace entre deux cœurs.
+          </p>
+          
+          <div class="cta-highlight">
+            <i class="fas fa-quote-left" aria-hidden="true"></i>
+            <p>Le plus beau cadeau est celui qu'on redécouvre chaque jour</p>
+            <i class="fas fa-quote-right" aria-hidden="true"></i>
+          </div>
+          
+          <button class="btn btn-cta-final" id="finalCta">
+            <span class="btn-glow" aria-hidden="true"></span>
+            <i class="fas fa-heart-circle-plus" aria-hidden="true"></i>
+            Crée maintenant un souvenir éternel
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </button>
+          
+          <p class="cta-note">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            Commandez maintenant • Pensez-y dans 20 ans avec un sourire
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Mobile Sticky -->
+    <div class="sticky-cta" id="stickyCta">
+      <div class="sticky-content">
+        <div class="sticky-info">
+          <span class="sticky-price">25 000F</span>
+          <span class="sticky-stock">
+            <i class="fas fa-fire" aria-hidden="true"></i>
+            <span id="stickyCounter">147</span> restantes
+          </span>
+        </div>
+        <button class="btn btn-sticky" id="stickyBtn">
+          <i class="fas fa-heart" aria-hidden="true"></i>
+          Offrir maintenant
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="heart-icon">♥</span>
+              <span>Teddy Love</span>
+            </div>
+            <p class="footer-tagline">
+              Plus qu'une peluche, un compagnon d'émotions.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#" class="footer-link">Mentions légales</a>
+            <a href="#" class="footer-link">CGV</a>
+            <a href="#" class="footer-link">Confidentialité</a>
+            <a href="#" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2026 Teddy Love. Édition limitée Saint-Valentin.
+            <span class="footer-hearts">♥ ♥ ♥</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal de personnalisation -->
+<div class="custom-modal" id="customModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">
+                <i class="fas fa-wand-sparkles" aria-hidden="true"></i>
+                Personnalisez Votre Teddy Love
+            </h2>
+            <button class="modal-close" id="modalClose" aria-label="Fermer">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        
+        <div class="modal-content">
+            <div class="customization-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Choisissez la Quantité</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" id="qtyMinus" aria-label="Réduire la quantité">
+                                <i class="fas fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <div class="qty-display">
+                                <span id="qtyValue">1</span>
+                                <span class="qty-label">Teddy Love</span>
+                            </div>
+                            <button class="qty-btn" id="qtyPlus" aria-label="Augmenter la quantité">
+                                <i class="fas fa-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="quantity-price">
+                            <span class="price-label">Total :</span>
+                            <span class="price-value" id="step1Price">25 000F</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step" data-step="2">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Créez Votre Message d'Amour</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="message-editor">
+                            <textarea id="loveMessage" placeholder="Écrivez le message qui fera battre le cœur plus fort..." maxlength="100">À mon amour, pour l'éternité. Teddy Love sera le gardien de notre histoire.</textarea>
+                            <div class="character-count">
+                                <span id="charCount">67</span>/100 caractères
+                            </div>
+                            <div class="message-preview">
+                                <div class="preview-card">
+                                    <div class="preview-heart">
+                                        <i class="fas fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="preview-text" id="previewText">
+                                        À mon amour, pour l'éternité. Teddy Love sera le gardien de notre histoire.
+                                    </div>
+                                    <div class="preview-signature">Avec tout mon amour</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step" data-step="3">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Choix du Parfum</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="scent-options">
+                            <div class="scent-option active" data-scent="rose">
+                                <div class="scent-icon">
+                                    <i class="fas fa-rose" aria-hidden="true"></i>
+                                </div>
+                                <div class="scent-info">
+                                    <h4>Rose Romantique</h4>
+                                    <p>Douce et enveloppante</p>
+                                </div>
+                            </div>
+                            <div class="scent-option" data-scent="vanilla">
+                                <div class="scent-icon">
+                                    <i class="fas fa-cookie-bite" aria-hidden="true"></i>
+                                </div>
+                                <div class="scent-info">
+                                    <h4>Vanille Douce</h4>
+                                    <p>Chaleureuse et réconfortante</p>
+                                </div>
+                            </div>
+                            <div class="scent-option" data-scent="lavender">
+                                <div class="scent-icon">
+                                    <i class="fas fa-spa" aria-hidden="true"></i>
+                                </div>
+                                <div class="scent-info">
+                                    <h4>Lavande Apaisante</h4>
+                                    <p>Calmante et relaxante</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="customization-summary">
+                <div class="summary-header">
+                    <h3>Votre Sélection</h3>
+                    <div class="summary-price" id="summaryPrice">25 000F</div>
+                </div>
+                
+                <div class="summary-details">
+                    <div class="summary-item">
+                        <span class="item-label">Teddy Love Édition Limitée</span>
+                        <span class="item-value">× <span id="summaryQty">1</span></span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Message personnalisé</span>
+                        <span class="item-value">Inclus</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Parfum</span>
+                        <span class="item-value" id="selectedScent">Rose Romantique</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Livraison express</span>
+                        <span class="item-value">GRATUITE</span>
+                    </div>
+                </div>
+                
+                <div class="summary-total">
+                    <span class="total-label">Total</span>
+                    <span class="total-value" id="summaryTotal">25 000F</span>
+                </div>
+                
+                <button class="summary-cta" id="completeOrder">
+                    <i class="fas fa-lock" aria-hidden="true"></i>
+                    Finaliser ma commande sécurisée
+                </button>
+                
+                <div class="summary-security">
+                    <i class="fas fa-shield-check" aria-hidden="true"></i>
+                    <span>Paiement 100% sécurisé • Satisfait ou remboursé 30 jours</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Confetti Container -->
+<div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script>
+// Script de secours
+document.addEventListener('DOMContentLoaded', function() {
+    // Gestionnaire simple pour tous les boutons CTA
+    const ctaButtons = document.querySelectorAll('#offerBtn, #finalCta, #stickyBtn');
+    
+    ctaButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const modal = document.getElementById('customModal');
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+    
+    // Fermer le modal
+    const closeButton = document.getElementById('modalClose');
+    if (closeButton) {
+        closeButton.addEventListener('click', function() {
+            const modal = document.getElementById('customModal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+});
+</script>
+  </body>
+</html>
