@@ -576,7 +576,7 @@ function showStockNotification() {
         if (style.parentNode) {
             document.head.removeChild(style);
         }
-    }, 3000);
+    }, 5000);
 }
 
 // ===== BOUTONS CTA - CORRIGÉ =====
@@ -1028,4 +1028,5 @@ document.addEventListener('keydown', function(e) {
             }
         }
     }
+
 });
